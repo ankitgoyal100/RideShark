@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RideShark</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_password">Password</string>
+    <string name="login_signin">Log In</string>
+    <string name="login_email_title">Email</string>
+    <string name="login_approvals_code">Login Approvals Code</string>
+    <string name="login_approvals_continue">Continue</string>
+    <string name="login_signup_fb">Sign Up for RideShark</string>
+    
+    
+
+</resources>

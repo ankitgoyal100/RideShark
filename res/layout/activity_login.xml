@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/login_background" >
+
+        <LinearLayout
+            android:id="@+id/login_main_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip" >
+
+            <View
+                android:id="@+id/login_focus_holder"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusDown="@+id/login_username"
+                android:nextFocusRight="@+id/login_username" />
+
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="fill_parent"
+                android:layout_height="42.0dip"
+                android:background="@drawable/login_inputfield_background"
+                android:hint="@string/login_email_title"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="9.0dip"
+                android:paddingRight="9.0dip"
+                android:singleLine="true"
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="42.0dip"
+                android:layout_marginBottom="17.0dip"
+                android:layout_marginTop="16.0dip"
+                android:background="@drawable/login_inputfield_background"
+                android:hint="@string/login_password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:padding="9.0dip"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@+id/login_login"
+                android:layout_width="fill_parent"
+                android:layout_height="42.0dip"
+                android:background="@drawable/login_button_background"
+                android:gravity="center"
+                android:paddingBottom="0.0dip"
+                android:paddingTop="0.0dip"
+                android:text="@string/login_signin"
+                android:textColor="@drawable/solid_white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_fb_logo_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/login_main_group"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/login_fb_logo"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_bottom_group"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/login_main_group" >
+
+            <TextView
+                android:id="@+id/login_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/login_help_center_portrait"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20.0dip"
+                android:padding="3.0dip"
+                android:text="@string/login_signup_fb"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/login_help_center_landscape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:background="@android:color/transparent"
+                android:src="@drawable/helpcenter_button" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

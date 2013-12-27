@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto" >
+
+    <PreferenceCategory android:title="USER INFORMATION" >
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefSmoker"
+            android:summary="Are you willing to ride with a smoker?"
+            android:title="Is smoking ok?" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="TRIP INFORMATION" >
+
+        <com.goyalgadgets.hackathon.DatePreference
+            android:defaultValue="1991.01.01"
+            android:key="dob"
+            android:summary="Enter a date"
+            android:title="Date" />
+
+        <!--
+             <com.goyalgadgets.hackathon.TimePickerPreference
+            android:key="prefsTimePicker"
+            android:summary="Enter a time"
+            android:title="Time" />
+        -->
+
+
+        <com.goyalgadgets.hackathon.HackathonListPreference
+            android:entries="@array/collegeNames"
+            android:entryValues="@array/collegeNamesValues"
+            android:key="collegePicker"
+            android:summary="Pick a college"
+            android:title="Starting College" />
+
+        <EditTextPreference
+            android:key="prefEndAddress"
+            android:summary="Enter an address"
+            android:title="Ending Address" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

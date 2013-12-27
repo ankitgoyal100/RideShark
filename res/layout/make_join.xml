@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background" >
+
+        <LinearLayout
+            android:id="@+id/login_main_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip" >
+
+            <View
+                android:id="@+id/login_focus_holder"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusDown="@+id/login_username"
+                android:nextFocusRight="@+id/login_username" />
+
+            <Button
+                android:id="@+id/btnMakeTrip"
+                android:layout_width="fill_parent"
+                android:layout_height="42.0dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/login_button_background"
+                android:gravity="center"
+                android:paddingBottom="0.0dip"
+                android:paddingTop="0.0dip"
+                android:text="Make Trip"
+                android:textColor="@drawable/solid_white"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnJoinTrip"
+                android:layout_width="fill_parent"
+                android:layout_height="42.0dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/login_button_background"
+                android:gravity="center"
+                android:paddingBottom="0.0dip"
+                android:paddingTop="0.0dip"
+                android:text="Join Trip"
+                android:textColor="@drawable/solid_white"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_fb_logo_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/login_main_group"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/login_fb_logo"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_bottom_group"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/login_main_group" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout><!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerVertical="true"
+    android:layout_weight="1"
+    android:background="@drawable/background"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="1.0dip"
+    android:paddingLeft="4.0dip"
+    android:paddingRight="4.0dip"
+    android:paddingTop="5.0dip" >
+
+    <Button
+        android:id="@+id/btnMakeTrip"
+        android:layout_width="fill_parent"
+        android:layout_height="42.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:background="@drawable/login_button_background"
+        android:padding="9.0dip"
+        android:text="Make Trip"
+        android:textColor="@drawable/solid_white"
+        android:textSize="14.0sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnJoinTrip"
+        android:layout_width="fill_parent"
+        android:layout_height="42.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@drawable/login_button_background"
+        android:paddingBottom="0.0dip"
+        android:paddingTop="0.0dip"
+        android:text="Join Trip"
+        android:textColor="@drawable/solid_white"
+        android:textSize="14.0sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+-->
