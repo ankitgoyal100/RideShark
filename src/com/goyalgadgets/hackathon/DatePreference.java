@@ -13,7 +13,7 @@ public class DatePreference extends DialogPreference implements DatePicker.OnDat
 
 	private static final String VALIDATION_EXPRESSION = "[0-9]*[0-9]*[0-9]*[0-9]-[0-1]*[0-9]-[0-3]*[0-9]";
 
-	private String defaultValue = "2013-03-27";
+	private String defaultValue = "2013-11-28";
 
 	public DatePreference(Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -39,7 +39,7 @@ public class DatePreference extends DialogPreference implements DatePicker.OnDat
 
 		DatePicker tp = new DatePicker(getContext());
 		if (y == -1)
-			tp.init(2013, 03, 27, this);
+			tp.init(2013, 12, 28, this);
 		else
 			tp.init(y, m, d, this);
 

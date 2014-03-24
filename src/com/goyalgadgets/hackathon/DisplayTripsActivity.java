@@ -62,6 +62,9 @@ public class DisplayTripsActivity extends Activity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		rides_data.add(new Rides(("Ankit Goyal"), "1193 Lees Meadow Court", "January 2nd, 2014"));
+
 		// Parse the JSON
 
 		Rides[] tempRides = new Rides[rides_data.size()];
@@ -75,7 +78,7 @@ public class DisplayTripsActivity extends Activity {
 		listView1.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				AlertDialog.Builder builder = new AlertDialog.Builder(context, AlertDialog.THEME_HOLO_LIGHT);
-				builder.setTitle("Join Trip " + position).setMessage("Are you sure you want to Join Trip " + position + " ? You will be emailed if your request is accepted.")
+				builder.setTitle("Join Ankit Goyal's Carpool").setMessage("Are you sure you want to this trip by Ankit Goyal? You will be emailed if your request is accepted.")
 						.setPositiveButton("Join", new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int id) {
 								// JOIN TRIP HERE
@@ -83,7 +86,7 @@ public class DisplayTripsActivity extends Activity {
 								handler.post(new Runnable() {
 									@Override
 									public void run() {
-										Toast.makeText(context, "You have been added to the trip", Toast.LENGTH_LONG).show();
+										Toast.makeText(context, "Your request has been sent to Ankit", Toast.LENGTH_LONG).show();
 									}
 								});
 								Intent makeJoin = new Intent(DisplayTripsActivity.this, MakeJoinActivity.class);

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string-array name="collegeNames">
-        <item name="1">University of Virginia</item>
-        <item name="2">Virginia Tech</item>
-        <item name="3">Virginia Commonwealth University</item>
+        <item name="1">Harvard University</item>
+        <item name="2">Massachusetts Institute of Technology</item>
+        <item name="3">University of Virginia</item>
     </string-array>
 	<string-array name="collegeNamesValues">
         <item name="1">1</item>

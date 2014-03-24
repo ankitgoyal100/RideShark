@@ -18,7 +18,7 @@
             android:defaultValue="1991.01.01"
             android:key="dob"
             android:summary="Enter a date"
-            android:title="Date" />
+            android:title="Departure Date" />
 
         <!--
              <com.goyalgadgets.hackathon.TimePickerPreference
